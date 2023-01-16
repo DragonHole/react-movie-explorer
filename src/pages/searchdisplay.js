@@ -23,7 +23,6 @@ const SearchDisplay = ( {moviesToDisplay, definedGenres} ) => {
                 </Flex>
             </Box>
             {searchFilters && <Filter genres={definedGenres}/>}
-            {router.query.by}
             <Flex background="gray.500" flexWrap="wrap" p={3}>
                 {moviesToDisplay.results.map((movieItem) => <Movie movie={movieItem} key={movieItem.id} />)}
             </Flex>
